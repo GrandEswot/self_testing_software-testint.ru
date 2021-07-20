@@ -4,8 +4,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 
 @pytest.fixture(autouse=True, scope='session')
 def driver():
-    driver = WebDriver(executable_path='/home/eswot/PycharmProjects/testing_from_youtube/'
-                                       'Web UI автоматизация на Selenium: с нуля до первого теста (Python)'
+    driver = WebDriver(executable_path='/home/eswot/PycharmProjects/self_testing/software-testing.ru_testing'
                                        '/chromedriver')
     # driver.implicitly_wait(3)
     yield driver

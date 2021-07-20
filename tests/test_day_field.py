@@ -34,6 +34,5 @@ def test_day_field(driver, day_data, month_data, year_data):
 
     result = driver.find_element_by_xpath('//span[@id="day-of-week"]')
     text = result.text
-    # print(text)
-    # time.sleep(3)
+
     assert text in day_list
